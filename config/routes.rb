@@ -3,5 +3,9 @@ Rails.application.routes.draw do
 	root 'posts#index'
 	resources :posts
   resources :tags, only: [:show]
-  resources :categories
+  resources :categories, only: [:show]
+
+  namespace :admin do
+    resources :categories, except: [:show]
+  end
 end
