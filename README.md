@@ -1,24 +1,20 @@
 # README
+ Установить Ruby
+  Для начала проверить, есть ли Ruby у вас:
+   - ruby -v
+   Должно быть что-то вроде  ruby 2.5.0
+ Если работаете в Windows, необходимо установить Ruby Installer Development Kit.
+ 
+ Вам также понадобится установка базы данных SQLite3.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Многие популярные UNIX-подобные ОС поставляются с приемлемой версией SQLite3. На Windows, если вы устанавливали Rails с помощью Rails Installer, у вас уже установлен SQLite. Прочие пользователи могут обратиться к инструкциям по установке на сайте SQLite3. Проверьте, что он правильно установлен и содержится в вашем PATH.
 
-Things you may want to cover:
+Для установки Rails используйте команду gem install, представленную RubyGems:
 
-* Ruby version
+$ gem install rails
 
-* System dependencies
+Чтобы проверить, что все установлено верно, нужно выполнить следующее:
 
-* Configuration
+$ rails --version
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Потом  $ rails s и ваш сервер запущен переходите по урлу который указан в консоли после запуска сервера.
